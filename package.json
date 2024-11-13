@@ -1,0 +1,12 @@
+{
+	"name": "json-schema-policies",
+	"version": "0.4.0",
+	"description": "Typings for enforcing good practices on Json Schema definitions",
+	"main": "index.ts",
+	"devDependencies": {
+		"typescript": "^5.6.3"
+	},
+	"scripts": {
+		"build": "tsc --noEmit"
+	}
+}
