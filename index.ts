@@ -4,7 +4,7 @@ interface SchemaObject {
 	description: string;
 	properties: Record<string, JsonSchemaRecommended>;
 	required: string[] | readonly string[];
-	additionalProperties: boolean | JsonSchemaRecommended;
+	additionalProperties: false;
 }
 
 interface SchemaString {
@@ -55,6 +55,14 @@ interface SchemaBoolean {
 	description: string;
 }
 
+interface SchemaRecord {
+	type: "object";
+	title: string;
+	description: string;
+	propertyNames: SchemaInteger | SchemaString;
+	additionalProperties: JsonSchemaRecommended;
+}
+
 export type JsonSchemaRecommended =
 	| SchemaObject
 	| SchemaArray
@@ -62,4 +70,5 @@ export type JsonSchemaRecommended =
 	| SchemaInteger
 	| SchemaEnum
 	| SchemaBoolean
-	| SchemaNumber;
+	| SchemaNumber
+	| SchemaRecord;
