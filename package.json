@@ -1,6 +1,6 @@
 {
 	"name": "json-schema-policies",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"description": "Typings for enforcing good practices on Json Schema definitions",
 	"main": "index.ts",
 	"devDependencies": {

@@ -37,8 +37,8 @@ interface SchemaArray {
 	title: string;
 	description: string;
 	items: JsonSchemaRecommended;
-	minLength: number;
-	maxLength: number;
+	minItems: number;
+	maxItems: number;
 	uniqueItems: boolean;
 }
 
