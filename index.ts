@@ -72,3 +72,7 @@ export type JsonSchemaRecommended =
 	| SchemaBoolean
 	| SchemaNumber
 	| SchemaRecord;
+
+export function createRecommendedSchema<T extends JsonSchemaRecommended>(schema: T): T {
+	return schema;
+}
